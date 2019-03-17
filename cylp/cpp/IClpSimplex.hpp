@@ -239,6 +239,7 @@ public:
     void getBasisStatus(int* cstat, int* rstat);
 
     void setMaxNumIteration(int m);
+    void setMaxSeconds(double m);
 
 };
 

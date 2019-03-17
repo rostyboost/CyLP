@@ -666,6 +666,10 @@ void IClpSimplex::setMaxNumIteration(int m){
     setIntParam(ClpMaxNumIteration, m);
 }
 
+void IClpSimplex::setMaxSeconds(double m){
+	setDblParam(ClpMaxSeconds, m);
+}
+
 void IClpSimplex::getBasisStatus(int* cstat, int* rstat){
     OsiClpSolverInterface osi(this, false);
     osi.getBasisStatus(cstat, rstat);

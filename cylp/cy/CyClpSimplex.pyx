@@ -732,6 +732,12 @@ cdef class CyClpSimplex:
         def __set__(self, value):
            self.CppSelf.setMaxNumIteration(value)
 
+    property maxSeconds:
+        def __get__(self):
+            return 0.0
+        def __set__(self, value):
+            self.CppSelf.setMaxSeconds(value)
+
     property logLevel:
         def __get__(self):
             return self.CppSelf.logLevel()

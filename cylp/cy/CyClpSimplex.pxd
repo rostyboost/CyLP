@@ -271,6 +271,7 @@ cdef extern from "IClpSimplex.hpp":
 
         void setMaxNumIteration(int m)
         int maximumIterations()
+        void setMaxSeconds(double m)
 
         #Osi
         void setBasisStatus(int* cstat, int* rstat)
